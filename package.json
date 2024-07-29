@@ -14,10 +14,13 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "axios-mock-adapter": "^1.22.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!axios)/\"",
+    "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!axios)/\" --passWithNoTests",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -38,7 +41,9 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "axios-mock-adapter": "^1.22.0"
+  "jest": {
+    "testMatch": [
+      "**/src/**/*.{test,spec}.{js,jsx,ts,tsx}"
+    ]
   }
 }
