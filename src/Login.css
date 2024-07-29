@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merienda:wght@300..900&family=Rock+Salt&display=swap');
+.container{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+section{
+    background-color: #FFF0F5;
+    height: auto;
+}
+.login{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid;
+    border-width: 2px;
+    border-left: 3rem;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.783);
+    margin-top: 50px;
+    width: 600px;
+    padding: 50px;
+
+
+}
+
+.login h1{
+    font-family: "Merienda", cursive;
+    color: #FBA1B7;
+}
+
+.login span{
+    color: #FFD1DA;
+}
+
+.login label{
+    font-family: "Kaushan Script", cursive;
+    color: #FBA1B7;
+    font-size: 18px;
+}
+
+.login button{
+    font-family: "Kaushan Script", cursive;
+    color: #FBA1B7;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.login button :hover{
+    color: #FBA1B7;
+    background-color: rgb(111, 0, 255);
+}
+
+.login input{
+    width: 400px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
