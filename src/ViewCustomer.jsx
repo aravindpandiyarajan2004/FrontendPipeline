@@ -8,17 +8,17 @@ function ViewCustomer() {
   const [records, setRecords] = useState([]);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    axios
-      .get("http://localhost:8040/customer/all")
-      .then((response) => {
-        setColumns(Object.keys(response.data[0]));
-        setRecords(response.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
+  // useEffect(() => {
+  //   axios
+  //     .get("http://localhost:8040/customer/all")
+  //     .then((response) => {
+  //       setColumns(Object.keys(response.data[0]));
+  //       setRecords(response.data);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }, []);
 
 
 

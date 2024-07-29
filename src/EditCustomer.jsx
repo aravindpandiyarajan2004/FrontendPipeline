@@ -7,12 +7,12 @@ function EditCustomer() {
   const { customerId } = useParams();
   const [data, setData] = useState([]);
   const navigate = useNavigate();
-  useEffect(() => {
-    axios
-      .get("http://localhost:8040/customer/" + customerId)
-      .then((response) => setData(response.data))
-      .catch((err) => console.log(err));
-  }, []);
+  // useEffect(() => {
+  //   axios
+  //     .get("http://localhost:8040/customer/" + customerId)
+  //     .then((response) => setData(response.data))
+  //     // .catch((err) => console.log(err));
+  // }, []);
 
   let handleSubmit = (e) => {
     let result = validateValues(data);

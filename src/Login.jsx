@@ -9,7 +9,7 @@ function Login() {
     const [inputData, setInputData] = useState({ username: "", password: "" });
     const [error, setError] = useState("");  // State for error message
     const navigate = useNavigate(); 
-    const { login } = useAuth();
+    // const { login } = useAuth();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -20,7 +20,7 @@ function Login() {
                 console.log("API Response:", res.data);
 
                 if (res.data === "Login successful") {
-                    login();
+                    // login();
                     console.log("entered");
                     navigate("/viewcustomer");  
                 } else {

@@ -21,19 +21,19 @@ function AddCustomer() {
     }
   });
 
-  useEffect(() => {
-    loadData();
-  }, []);
+  // useEffect(() => {
+  //   loadData();
+  // }, []);
 
-  const loadData = async () => {
-    await axios.get("http://localhost:8040/order/idlist")
-      .then((res) => {
-        console.log(res.data);
-        setRecords(res.data);
-        return res.data;
-      })
-      // .catch((err) => console.error(err));
-  };
+  // const loadData = async () => {
+  //   await axios.get("http://localhost:8040/order/idlist")
+  //     .then((res) => {
+  //       console.log(res.data);
+  //       setRecords(res.data);
+  //       return res.data;
+  //     })
+  //     // .catch((err) => console.error(err));
+  // };
 
 
   let handleChange = (e) => {

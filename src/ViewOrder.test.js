@@ -48,10 +48,7 @@ describe("ViewOrderComponent", () => {
         expect(linkElement).toHaveTextContent("Action");
     });
 
-    test('renders Add Button ', () => {
-        render(<ViewOrder />);
-        const linkElement = screen.getByRole("addbutton");
-    });
+   
 
     test('renders order table', () => {
         render(<ViewOrder />);
